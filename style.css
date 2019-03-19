@@ -702,33 +702,33 @@ body.page .main-navigation {
   font-size: 1.5em;
 }
 
-.liste-cours .session-1 {
-  background-color: #1c7742;
+.liste-cours .domaine-1 {
+  background-color: #c1a0ff;
   color: #fff;
 }
 
-.liste-cours .session-2 {
-  background-color: #d3a145;
+.liste-cours .domaine-2 {
+  background-color: #f7ce83;
   color: #aaa;
 }
 
-.liste-cours .session-3 {
-  background-color: #2f2f97;
+.liste-cours .domaine-3 {
+  background-color: #7777e7;
   color: #fff;
 }
 
-.liste-cours .session-4 {
-  background-color: #948b36;
+.liste-cours .domaine-4 {
+  background-color: #89c581;
   color: #fff;
 }
 
-.liste-cours .session-5 {
-  background-color: #97173d;
+.liste-cours .domaine-5 {
+  background-color: #ff9a9a;
   color: #fff;
 }
 
-.liste-cours .session-6 {
-  background-color: #251b04;
+.liste-cours .domaine-6 {
+  background-color: #ffffff;
   color: #fff;
 }
 
@@ -770,12 +770,20 @@ body.page .main-navigation {
   }
 }
 
-.liste-cours .entry-title h3 {
-  font-size: .5em;
+.liste-cours .entry-title h3.titre-cours-h3 {
+  color: white;
 }
 
-.liste-cours .entry-title h4 {
-  font-size: .4em;
+.liste-cours .entry-title h4.desc-cours-h4 {
+  color: white;
+}
+
+.liste-cours .entry-title.domaine-1:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-2:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-3:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-4:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-5:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-6:hover h3.titre-cours-h3 {
+  color: #313131;
+}
+
+.liste-cours .entry-title.domaine-1:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-2:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-3:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-4:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-5:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-6:hover h4.desc-cours-h4 {
+  color: #313131;
 }
 
 .entry .entry-content .has-large-font-size {

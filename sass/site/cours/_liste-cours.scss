@@ -11,12 +11,12 @@
     margin: 2% 2% 0% 15%;
     font-size : 1.5em;
   
-    .session-1 { background-color: #1c7742; color : #fff; }
-    .session-2 { background-color: #d3a145; color : #aaa;}
-    .session-3 { background-color: #2f2f97; color : #fff;}
-    .session-4 { background-color: #948b36; color : #fff;}
-    .session-5 { background-color: #97173d; color : #fff;}
-    .session-6 { background-color: #251b04; color : #fff;}
+    .domaine-1 { background-color: #c1a0ff; color : #fff; }
+    .domaine-2 { background-color: #f7ce83; color : #aaa;}
+    .domaine-3 { background-color: #7777e7; color : #fff;}
+    .domaine-4 { background-color: #89c581; color : #fff;}
+    .domaine-5 { background-color: #ff9a9a; color : #fff;}
+    .domaine-6 { background-color: #ffffff; color : #fff;}
     h3,h4 { padding:5px;}
 
     @include media(mobile){
@@ -47,14 +47,25 @@
 
     .entry-title {
 
-        h3{
-            font-size: .5em;
+        h3.titre-cours-h3{
+           color: white;
         }
-        h4{
-            font-size: .4em;
+        h4.desc-cours-h4{
+            color: white;
         }
-    }
 
+    }
+    
+    .entry-title.domaine-1:hover, .entry-title.domaine-2:hover, .entry-title.domaine-3:hover, .entry-title.domaine-4:hover,.entry-title.domaine-5:hover, .entry-title.domaine-6:hover {
+
+        h3.titre-cours-h3{
+           color:#313131;
+        }
+        h4.desc-cours-h4{
+            color:#313131;
+        }
+        
+    }
 
 
 
