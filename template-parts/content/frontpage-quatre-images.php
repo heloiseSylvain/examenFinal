@@ -12,7 +12,7 @@
 
 <div class="wp-block-column">
 	<figure class="wp-block-image">
-	 
+	 <a href="<?php the_permalink(); ?>">
 
 	<?php 
 //	the_post_thumbnail(''); 
@@ -26,6 +26,7 @@
 	// add_post_meta($post_id, '_thumbnail_id', $attachment_id);
 	
 	?>
+	</a>
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	</figcaption>
 	</figure>
