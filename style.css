@@ -621,7 +621,6 @@ body.page .main-navigation {
   font-size: 8vw;
   -webkit-transform: translateY(-50vh);
           transform: translateY(-50vh);
-  width: 5em;
   padding: 4px;
 }
 
@@ -783,7 +782,7 @@ body.page .main-navigation {
   font-size: 1em;
 }
 
-.site-title {
+.site-title.anim1 {
   letter-spacing: 0.5vw;
   font-weight: 100;
   font-size: 4em;
