@@ -708,22 +708,22 @@ body.page .main-navigation {
 }
 
 .liste-cours .domaine-2 {
-  background-color: #f7ce83;
+  background-color: #EA97EF;
   color: #aaa;
 }
 
 .liste-cours .domaine-3 {
-  background-color: #7777e7;
+  background-color: #A968C8;
   color: #fff;
 }
 
 .liste-cours .domaine-4 {
-  background-color: #89c581;
+  background-color: #7958AA;
   color: #fff;
 }
 
 .liste-cours .domaine-5 {
-  background-color: #ff9a9a;
+  background-color: #C2E3F3;
   color: #fff;
 }
 
@@ -779,11 +779,11 @@ body.page .main-navigation {
 }
 
 .liste-cours .entry-title.domaine-1:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-2:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-3:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-4:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-5:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-6:hover h3.titre-cours-h3 {
-  color: #313131;
+  color: #4E0C3A;
 }
 
 .liste-cours .entry-title.domaine-1:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-2:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-3:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-4:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-5:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-6:hover h4.desc-cours-h4 {
-  color: #313131;
+  color: #4E0C3A;
 }
 
 .entry .entry-content .has-large-font-size {
@@ -799,6 +799,7 @@ body.page .main-navigation {
 .site-description {
   letter-spacing: 0.5vw;
   font-weight: 100;
+  display: block;
 }
 
 .site-title:not(:empty) + .site-description:not(:empty):before {
@@ -825,6 +826,24 @@ body.page .main-navigation {
 
 .entry-title a:hover, a:active {
   color: white !important;
+}
+
+/* code sass pour les articles nouvelles et evenements*/
+.wp-block-media-text__content p {
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+div.wp-block-media-text__content p {
+  background: #C2E3F3 !important;
+}
+
+a.lienArticle {
+  color: #4E0C3A;
+  font-size: .8em;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 @-webkit-keyframes anim1 {

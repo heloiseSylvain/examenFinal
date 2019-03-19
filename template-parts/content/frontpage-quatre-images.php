@@ -27,7 +27,7 @@
 	
 	?>
 	</a>
-		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		<a class="lienArticle" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	</figcaption>
 	</figure>
 </div>
