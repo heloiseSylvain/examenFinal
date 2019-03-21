@@ -599,92 +599,6 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header.featured-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* enfant */
-  /* enfant */
-}
-
-.site-header.featured-image .site-branding .site-title {
-  font-size: 8vw;
-  -webkit-transform: translateY(-50vh);
-          transform: translateY(-50vh);
-  padding: 4px;
-}
-
-.site-header.featured-image .site-branding .site-description {
-  font-size: 5vw;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
-.site-header.featured-image .site-branding {
-  position: relative;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 78vw;
-  min-height: 50vh;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.site-header.featured-image .site-featured-image .entry-header {
-  position: relative;
-  z-index: 9;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-header.featured-image .site-branding {
-    min-width: 78vw;
-    min-height: 35vh;
-  }
-  .site-header.featured-image .site-branding .site-title {
-    font-size: 4vw;
-  }
-  .site-header.featured-image .site-branding .site-description {
-    font-size: 3vw;
-  }
-}
-
-@media only screen and (min-width: 1168px) {
-  .site-header.featured-image .site-branding {
-    min-width: 78vw;
-    min-height: 35vh;
-  }
-  .site-header.featured-image .site-branding .site-title {
-    font-size: 5vw;
-  }
-  .site-header.featured-image .site-branding .site-description {
-    font-size: 4vw;
-  }
-}
-
 /*--------------------------------------------------------------
 ## cours
 --------------------------------------------------------------*/
@@ -790,26 +704,6 @@ body.page .main-navigation {
   font-size: 1em;
 }
 
-.site-title.anim1 {
-  letter-spacing: 0.5vw;
-  font-weight: 100;
-  font-size: 4em;
-}
-
-.site-description {
-  letter-spacing: 0.5vw;
-  font-weight: 100;
-  display: block;
-}
-
-.site-title:not(:empty) + .site-description:not(:empty):before {
-  content: none;
-}
-
-.site-header.featured-image:after {
-  background: none;
-}
-
 .entry-title {
   font-weight: 100;
   letter-spacing: 0.5vw;
@@ -846,160 +740,189 @@ a.lienArticle {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-@-webkit-keyframes anim1 {
+.site-title a {
+  -webkit-animation: animationLettre 1s both;
+          animation: animationLettre 1s both;
+}
+
+@-webkit-keyframes animationLettre {
   from {
-    -webkit-transform: translateY(-100vh) rotateX(0deg);
-            transform: translateY(-100vh) rotateX(0deg);
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+    opacity: 0;
+    /*transform: translateY(-75vw) rotate(180deg) scale(1);*/
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
+            animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
   }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0deg);
-            transform: translateY(0) rotateX(0deg);
+  50% {
+    opacity: .5;
+    /*transform: translateY(30vw) rotate(180deg) scale(1.5);*/
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
+            animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
+  }
+  to {
+    opacity: 1;
+    /*transform: translateY(0%) rotate(0deg) scale(1);*/
   }
 }
 
-@keyframes anim1 {
+@keyframes animationLettre {
   from {
-    -webkit-transform: translateY(-100vh) rotateX(0deg);
-            transform: translateY(-100vh) rotateX(0deg);
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+    opacity: 0;
+    /*transform: translateY(-75vw) rotate(180deg) scale(1);*/
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
+            animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
   }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0deg);
-            transform: translateY(0) rotateX(0deg);
+  50% {
+    opacity: .5;
+    /*transform: translateY(30vw) rotate(180deg) scale(1.5);*/
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
+            animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
   }
-}
-
-@-webkit-keyframes anim2 {
-  0% {
-    -webkit-transform: rotateX(50deg);
-            transform: rotateX(50deg);
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-  }
-  60% {
-    -webkit-transform: rotateX(-40deg);
-            transform: rotateX(-40deg);
-  }
-  70% {
-    -webkit-transform: rotateX(30deg);
-            transform: rotateX(30deg);
-  }
-  80% {
-    -webkit-transform: rotateX(-20deg);
-            transform: rotateX(-20deg);
-  }
-  90% {
-    -webkit-transform: rotateX(10deg);
-            transform: rotateX(10deg);
-  }
-  95% {
-    -webkit-transform: rotateX(-5deg);
-            transform: rotateX(-5deg);
-  }
-  97% {
-    -webkit-transform: rotateX(3deg);
-            transform: rotateX(3deg);
-  }
-  99% {
-    -webkit-transform: rotateX(-2deg);
-            transform: rotateX(-2deg);
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+  to {
+    opacity: 1;
+    /*transform: translateY(0%) rotate(0deg) scale(1);*/
   }
 }
 
-@keyframes anim2 {
-  0% {
-    -webkit-transform: rotateX(50deg);
-            transform: rotateX(50deg);
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+p.site-description {
+  -webkit-animation: animationDescription 1.5s both;
+          animation: animationDescription 1.5s both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animationDescription {
+  from {
+    -webkit-transform: translateX(-75vw);
+            transform: translateX(-75vw);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
+            animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
   }
-  60% {
-    -webkit-transform: rotateX(-40deg);
-            transform: rotateX(-40deg);
+  50% {
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
+            animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
   }
-  70% {
-    -webkit-transform: rotateX(30deg);
-            transform: rotateX(30deg);
-  }
-  80% {
-    -webkit-transform: rotateX(-20deg);
-            transform: rotateX(-20deg);
-  }
-  90% {
-    -webkit-transform: rotateX(10deg);
-            transform: rotateX(10deg);
-  }
-  95% {
-    -webkit-transform: rotateX(-5deg);
-            transform: rotateX(-5deg);
-  }
-  97% {
-    -webkit-transform: rotateX(3deg);
-            transform: rotateX(3deg);
-  }
-  99% {
-    -webkit-transform: rotateX(-2deg);
-            transform: rotateX(-2deg);
-  }
-  100% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
-@-webkit-keyframes anim3 {
-  0% {
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-    -webkit-transform: translateX(-100%) rotateX(50deg);
-            transform: translateX(-100%) rotateX(50deg);
+@keyframes animationDescription {
+  from {
+    -webkit-transform: translateX(-75vw);
+            transform: translateX(-75vw);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
+            animation-timing-function: cubic-bezier(0.8, 0.01, 0.97, 0.19);
   }
-  100% {
-    -webkit-transform: translateX(0) rotateX(50deg);
-            transform: translateX(0) rotateX(50deg);
+  50% {
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
+    -webkit-animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
+            animation-timing-function: cubic-bezier(0.09, 0.25, 0.19, 1.01);
   }
-}
-
-@keyframes anim3 {
-  0% {
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-    -webkit-transform: translateX(-100%) rotateX(50deg);
-            transform: translateX(-100%) rotateX(50deg);
-  }
-  100% {
-    -webkit-transform: translateX(0) rotateX(50deg);
-            transform: translateX(0) rotateX(50deg);
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
-.site-header.featured-image {
-  -webkit-perspective: 500px;
-          perspective: 500px;
+/*
+ Theme Name:   Twenty Nineteen Enfant
+ Theme URI:    http://example.com/twenty-nineteen-child/
+ Description:  Twenty Nineteen Enfant
+ Author:       Héloïse Sylvain
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-nineteen-enfant
+*/
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-.anim1 {
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-animation: anim1 2s, anim2 1s 2s;
-          animation: anim1 2s, anim2 1s 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.site-branding > .site-title > a {
+  color: pink;
+  text-transform: uppercase;
 }
 
-.anim3 {
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
-  -webkit-animation: anim3 1s forwards, anim2 1s 1s forwards;
-          animation: anim3 1s forwards, anim2 1s 1s forwards;
-  -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-          animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+.site-title {
+  letter-spacing: 0.5vw;
+  font-weight: 100;
+  font-size: 4em;
+}
+
+.site-description {
+  letter-spacing: 0.5vw;
+  font-weight: 100;
+}
+
+.site-title:not(:empty) + .site-description:not(:empty):before {
+  content: none;
+}
+
+.entry-title {
+  font-weight: 100;
+  letter-spacing: 0.5vw;
+  font-size: 1em;
+}
+
+.etiquette-image {
+  height: 100vh;
+}
+
+.site-header.featured-image:after {
+  background: none;
+}
+
+.conteneur-images img {
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+.conteneur-images img:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.entry .entry-title:before {
+  content: none;
+}
+
+.entry-title {
+  font-weight: 400;
+}
+
+.entry-title a:hover, a:active {
+  color: white !important;
+}
+
+.entry-header-cours {
+  margin: 0;
+}
+
+.site-main article {
+  margin-top: 0;
+}
+
+.site-info {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

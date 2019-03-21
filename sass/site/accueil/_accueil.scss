@@ -2,26 +2,6 @@
     font-size: 1em; 
 }
 
-.site-title.anim1{
-    letter-spacing: 0.5vw;
-    font-weight: 100;
-    font-size: 4em;
-  }
-  
-  .site-description {
-    letter-spacing: 0.5vw;
-    font-weight: 100;
-    display: block ;
-  }
-  
-  .site-title:not(:empty) + .site-description:not(:empty):before {
-    content: none;
-  }
-
-  .site-header.featured-image:after {
-    background: none;
-}
-
 .entry-title {
   font-weight: 100;
   letter-spacing: 0.5vw;

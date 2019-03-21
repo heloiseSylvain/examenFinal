@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+ Theme Name:   Twenty Nineteen Enfant
+ Theme URI:    http://example.com/twenty-nineteen-child/
+ Description:  Twenty Nineteen Enfant
+ Author:       Héloïse Sylvain
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-nineteen-enfant
+*/
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.site-branding > .site-title > a {
+  color: pink;
+  text-transform: uppercase;
+}
+
+.site-title {
+  letter-spacing: 0.5vw;
+  font-weight: 100;
+  font-size: 4em;
+}
+
+.site-description {
+  letter-spacing: 0.5vw;
+  font-weight: 100;
+}
+
+.site-title:not(:empty) + .site-description:not(:empty):before {
+  content: none;
+}
+
+.entry-title {
+  font-weight: 100;
+  letter-spacing: 0.5vw;
+  font-size: 1em;
+}
+
+.etiquette-image {
+  height: 100vh;
+}
+
+.site-header.featured-image:after {
+  background: none;
+}
+
+.conteneur-images img {
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+.conteneur-images img:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.entry .entry-title:before {
+  content: none;
+}
+
+.entry-title {
+  font-weight: 400;
+}
+
+.entry-title a:hover, a:active {
+  color: white !important;
+}
+
+.entry-header-cours {
+  margin: 0;
+}
+
+.site-main article {
+  margin-top: 0;
+}
+
+.site-info {
+  display: none;
+}
+/*# sourceMappingURL=general.css.map */
