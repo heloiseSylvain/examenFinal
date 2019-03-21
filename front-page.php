@@ -42,6 +42,7 @@ get_header();
 
 <article  class="page type-page status-publish has-post-thumbnail hentry entry">
 	<div class="entry-content">
+		<h3>DERNIÈRES NOUVELLES</h3>
 		<div class="wp-block-columns has-4-columns">
 		<?php while ( $query->have_posts()) {
 				$query->the_post();
@@ -51,7 +52,8 @@ get_header();
 	 wp_reset_postdata();
 	}
 ?>
-		</div>	
+		</div>
+		<h3>ÉVÉVEMENTS À VENIR</h3>	
 
 
 <!--  ////////////////////// La troisième boucle pour les articles de catégorie  événement  -->
