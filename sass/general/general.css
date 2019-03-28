@@ -50,20 +50,67 @@
   content: none;
 }
 
+/* css pour les articles nouvelles, cours et evenement*/
 .entry-title {
   font-weight: 100;
   letter-spacing: 0.5vw;
   font-size: 1em;
 }
 
-.article {
+.category-cours .titre-article {
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.category-nouvelle .titre-article,
+.category-evenement .titre-article {
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.category-nouvelle h2,
+.category-evenement h2 {
   font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.contenu-article-cours {
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.conteneur-article-cours article {
+  padding: 2vh;
+}
+
+.contenu-article-cours h4 {
+  font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .etiquette-image {
   height: 100vh;
 }
 
+/*fin du css pour les articles de cours, nouvelle et evenement*/
 .site-header.featured-image:after {
   background: none;
 }

@@ -606,6 +606,26 @@ body.page .main-navigation {
   margin-bottom: 0;
 }
 
+.domaine-1 {
+  background-color: #01B6B2;
+}
+
+.domaine-2 {
+  background-color: #57C5C4;
+}
+
+.domaine-3 {
+  background-color: #8789C0;
+}
+
+.domaine-4 {
+  background-color: #EF4545;
+}
+
+.domaine-5 {
+  background-color: #FF6870;
+}
+
 .liste-cours {
   display: -ms-grid;
   display: grid;
@@ -614,36 +634,6 @@ body.page .main-navigation {
   grid-gap: 10px;
   margin: 2% 2% 0% 15%;
   font-size: 1.5em;
-}
-
-.liste-cours .domaine-1 {
-  background-color: #c1a0ff;
-  color: #fff;
-}
-
-.liste-cours .domaine-2 {
-  background-color: #EA97EF;
-  color: #aaa;
-}
-
-.liste-cours .domaine-3 {
-  background-color: #A968C8;
-  color: #fff;
-}
-
-.liste-cours .domaine-4 {
-  background-color: #7958AA;
-  color: #fff;
-}
-
-.liste-cours .domaine-5 {
-  background-color: #C2E3F3;
-  color: #fff;
-}
-
-.liste-cours .domaine-6 {
-  background-color: #ffffff;
-  color: #fff;
 }
 
 .liste-cours h3, .liste-cours h4 {
@@ -693,11 +683,11 @@ body.page .main-navigation {
 }
 
 .liste-cours .entry-title.domaine-1:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-2:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-3:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-4:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-5:hover h3.titre-cours-h3, .liste-cours .entry-title.domaine-6:hover h3.titre-cours-h3 {
-  color: #4E0C3A;
+  text-decoration: underline;
 }
 
 .liste-cours .entry-title.domaine-1:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-2:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-3:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-4:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-5:hover h4.desc-cours-h4, .liste-cours .entry-title.domaine-6:hover h4.desc-cours-h4 {
-  color: #4E0C3A;
+  text-decoration: underline;
 }
 
 .entry .entry-content .has-large-font-size {
@@ -879,20 +869,67 @@ p.site-description {
   content: none;
 }
 
+/* css pour les articles nouvelles, cours et evenement*/
 .entry-title {
   font-weight: 100;
   letter-spacing: 0.5vw;
   font-size: 1em;
 }
 
-.article {
+.category-cours .titre-article {
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.category-nouvelle .titre-article,
+.category-evenement .titre-article {
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.category-nouvelle h2,
+.category-evenement h2 {
   font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.contenu-article-cours {
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.conteneur-article-cours article {
+  padding: 2vh;
+}
+
+.contenu-article-cours h4 {
+  font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .etiquette-image {
   height: 100vh;
 }
 
+/*fin du css pour les articles de cours, nouvelle et evenement*/
 .site-header.featured-image:after {
   background: none;
 }

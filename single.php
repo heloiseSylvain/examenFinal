@@ -27,6 +27,8 @@ get_header();
 						get_template_part( 'template-parts/content/content', 'single-nouvelle' );
 					} elseif ( in_category('evenement') ) {
 						get_template_part( 'template-parts/content/content', 'single-nouvelle' );
+					} elseif ( in_category('cours') ) {
+						get_template_part( 'template-parts/content/content', 'single-cours' );
 					} else {
 						get_template_part( 'template-parts/content/content', 'single' );
 					}

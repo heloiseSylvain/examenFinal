@@ -4,6 +4,12 @@
       margin-bottom:0 ;
 }
 
+.domaine-1 { background-color: #01B6B2;}
+.domaine-2 { background-color: #57C5C4;}
+.domaine-3 { background-color: #8789C0;}
+.domaine-4 { background-color: #EF4545;}
+.domaine-5 { background-color: #FF6870;}
+
 .liste-cours {
     display : grid;
     grid-template-columns: 1fr;
@@ -11,12 +17,6 @@
     margin: 2% 2% 0% 15%;
     font-size : 1.5em;
   
-    .domaine-1 { background-color: #c1a0ff; color : #fff; }
-    .domaine-2 { background-color: #EA97EF; color : #aaa;}
-    .domaine-3 { background-color: #A968C8; color : #fff;}
-    .domaine-4 { background-color: #7958AA; color : #fff;}
-    .domaine-5 { background-color: #C2E3F3; color : #fff;}
-    .domaine-6 { background-color: #ffffff; color : #fff;}
     h3,h4 { padding:5px;}
 
     @include media(mobile){
@@ -59,10 +59,10 @@
     .entry-title.domaine-1:hover, .entry-title.domaine-2:hover, .entry-title.domaine-3:hover, .entry-title.domaine-4:hover,.entry-title.domaine-5:hover, .entry-title.domaine-6:hover {
 
         h3.titre-cours-h3{
-           color:#4E0C3A;
+           text-decoration: underline;
         }
         h4.desc-cours-h4{
-            color:#4E0C3A;
+            text-decoration: underline;
         }
         
     }
