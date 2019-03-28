@@ -1,0 +1,29 @@
+/* css pour les articles nouvelles et evenement*/
+.entry-title {
+  font-weight: 100;
+  letter-spacing: 0.5vw;
+  font-size: 1em;
+}
+
+
+.category-nouvelle .titre-article, 
+.category-evenement .titre-article{
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.category-nouvelle h2,
+.category-evenement h2
+{
+  font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.etiquette-image {
+  height: 100vh;
+}

@@ -607,23 +607,23 @@ body.page .main-navigation {
 }
 
 .domaine-1 {
-  background-color: #01B6B2;
+  background-color: #011627;
 }
 
 .domaine-2 {
-  background-color: #57C5C4;
+  background-color: #094074;
 }
 
 .domaine-3 {
-  background-color: #8789C0;
+  background-color: #900000;
 }
 
 .domaine-4 {
-  background-color: #EF4545;
+  background-color: #FF6501;
 }
 
 .domaine-5 {
-  background-color: #FF6870;
+  background-color: #F1B416;
 }
 
 .liste-cours {
@@ -690,6 +690,42 @@ body.page .main-navigation {
   text-decoration: underline;
 }
 
+/* css pour les articles cours*/
+.category-cours .titre-article {
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.contenu-article-cours {
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.conteneur-article-cours article {
+  padding: 2vh;
+  color: white;
+}
+
+.conteneur-article-cours .entry-footer {
+  color: white;
+}
+
+.contenu-article-cours h4 {
+  font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 .entry .entry-content .has-large-font-size {
   font-size: 1em;
 }
@@ -728,6 +764,36 @@ a.lienArticle {
 
 #responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css pour les articles nouvelles et evenement*/
+.entry-title {
+  font-weight: 100;
+  letter-spacing: 0.5vw;
+  font-size: 1em;
+}
+
+.category-nouvelle .titre-article,
+.category-evenement .titre-article {
+  font-weight: 600 !important;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.category-nouvelle h2,
+.category-evenement h2 {
+  font-weight: 400 !important;
+  letter-spacing: 0.3em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.etiquette-image {
+  height: 100vh;
 }
 
 .site-title a {
@@ -869,72 +935,6 @@ p.site-description {
   content: none;
 }
 
-/* css pour les articles nouvelles, cours et evenement*/
-.entry-title {
-  font-weight: 100;
-  letter-spacing: 0.5vw;
-  font-size: 1em;
-}
-
-.category-cours .titre-article {
-  font-weight: 600 !important;
-  letter-spacing: 0.3em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  text-align: center;
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.category-nouvelle .titre-article,
-.category-evenement .titre-article {
-  font-weight: 600 !important;
-  letter-spacing: 0.3em;
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.category-nouvelle h2,
-.category-evenement h2 {
-  font-weight: 400 !important;
-  letter-spacing: 0.3em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.contenu-article-cours {
-  text-align: justify;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-.conteneur-article-cours article {
-  padding: 2vh;
-  color: white;
-}
-
-.conteneur-article-cours .entry-footer {
-  color: white;
-}
-
-.contenu-article-cours h4 {
-  font-weight: 400 !important;
-  letter-spacing: 0.3em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.etiquette-image {
-  height: 100vh;
-}
-
-/*fin du css pour les articles de cours, nouvelle et evenement*/
 .site-header.featured-image:after {
   background: none;
 }
