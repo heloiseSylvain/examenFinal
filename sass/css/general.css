@@ -17,17 +17,17 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-.site-header.featured-image{
+.site-header.featured-image {
   text-shadow: none;
 }
 
@@ -41,7 +41,7 @@
   font-size: 4em;
 }
 
-.site-header.featured-image .site-branding .site-description{
+.site-header.featured-image .site-branding .site-description {
   letter-spacing: 0.5vw;
   font-weight: 100;
 }
@@ -55,12 +55,6 @@
   letter-spacing: 0.5vw;
   font-size: 1em;
 }
-
-.article{
-  font-weight: 400 !important;
-}
-
-
 
 .etiquette-image {
   height: 100vh;
@@ -79,29 +73,30 @@
 
 .conteneur-images img:hover {
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 
-.entry .entry-title:before{
-    content: none;
+.entry .entry-title:before {
+  content: none;
+}
+
+.entry-title {
+  font-weight: 400;
 }
 
 .entry-title a:hover, a:active {
   color: white !important;
 }
 
-.entry-header-cours{
-    margin: 0;
+.entry-header-cours {
+  margin: 0;
 }
 
-.site-main article{
+.site-main article {
   margin-top: 0;
-
 }
 
-
-.site-info{
-    display: none;
+.site-info {
+  display: none;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=general.css.map */

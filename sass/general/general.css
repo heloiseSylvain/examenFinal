@@ -56,6 +56,10 @@
   font-size: 1em;
 }
 
+.article {
+  font-weight: 400 !important;
+}
+
 .etiquette-image {
   height: 100vh;
 }
@@ -78,10 +82,6 @@
 
 .entry .entry-title:before {
   content: none;
-}
-
-.entry-title {
-  font-weight: 400;
 }
 
 .entry-title a:hover, a:active {
