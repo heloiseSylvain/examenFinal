@@ -913,6 +913,11 @@ p.site-description {
 
 .conteneur-article-cours article {
   padding: 2vh;
+  color: white;
+}
+
+.conteneur-article-cours .entry-footer {
+  color: white;
 }
 
 .contenu-article-cours h4 {
